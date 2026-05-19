@@ -1,3 +1,4 @@
+
 import express from 'express'
 import cors from 'cors'
 import dotenv from 'dotenv'
@@ -5,8 +6,9 @@ import mongoose from 'mongoose'
 import menuRoutes from './routes/menu.js'
 import orderRoutes from './routes/orders.js'
 
+// dotenv.config();
+console.log('MONGO_URI:', process.env.MONGO_URI);
 dotenv.config();
-console.log('MONGO_URI:', process.env.MONGO_URI)
 
 const app = express();
 
